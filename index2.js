@@ -3,7 +3,7 @@ const detectlang=require("lang-detector")
 const cors = require("cors"); 
 const Axios = require("axios"); 
 const app = express(); 
-const PORT = 8000; 
+const PORT = 8000 ||  process.env.PORT ; 
 const path = require('path');
 
 app.use(cors()); 
